@@ -38,7 +38,7 @@ while True:
                 organizer.view_recipes(user_input)
 
         elif user_response.lower() == "search recipes" or user_response == str(4):
-            print("\nEnter Recipe name or Recipe ingredient")
+            print("\nEnter Recipe name")
             search_keyword = input("🔎 ")
             organizer.search_recipe(search_keyword)
         elif user_response.lower() == "exit" or user_response == str(5):

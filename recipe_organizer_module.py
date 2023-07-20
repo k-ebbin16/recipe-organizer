@@ -59,9 +59,6 @@ class RecipeOrganizer:
                 if keyword.lower() in r.recipe_name:
                     matching_recipe.append(r.recipe_name)
                     matching_recipe_list = list(enumerate(matching_recipe, start=1))
-                elif keyword.lower() in r.ingredients:
-                    matching_recipe.append(r.recipe_name)
-                    matching_recipe_list = list(enumerate(matching_recipe, start=1))
             if not matching_recipe:
                 print("\nNo matching recipes found!")
             else:
